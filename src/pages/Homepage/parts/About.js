@@ -11,14 +11,14 @@ const About = () => {
         <Box sx={{borderBottom: '1px solid white', mt: -1.2}}></Box>
       </Box>
       
-      <Grid sx={{pt: 10}} container>
+      <Grid sx={{pt: {md: 10, xs: 7}, pl: 3}} container>
         <Grid sx={{display: 'flex', flexDirection: 'column',justifyContent: 'flex-start'}} item md={6} xs={12}>
           <Typography sx={{fontSize: 25, mb: 3}}>Rariko is a decentralized social messaging platform that allows users to create an identity, socialize with fellow blockchain sapiens and access all their favorite communities in few clicks.</Typography>
           <Typography sx={{fontSize: 25}}>We are introducing safer and simpler community management tools. Finally a platform built for real users not for bots and scammers.</Typography>
 
           <a style={{background: '#5a2cbb', padding: '0.5rem 1rem', borderRadius: '25px', marginRight:'auto', marginTop: '2rem'}}>Explore</a>
         </Grid>
-        <Grid sx={{display: 'flex', justifyContent: 'center', pb: 10}} item md={6} xs={12}>
+        <Grid sx={{display: 'flex', justifyContent: 'center', pb: 10, pt: {md: 0, xs: 8}}} item md={6} xs={12}>
           <img style={{width: '60%'}} src={phone}/>
         </Grid>
       </Grid>

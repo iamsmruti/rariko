@@ -1,10 +1,10 @@
 import { Box, Container, Grid, IconButton, Typography,  } from '@mui/material'
 import React from "react";
-import linkedin from "../linkedin.svg";
-import twitter from "../twitter.svg";
-import insta from "../insta.svg";
-import telegram from "../telegram.svg";
-import medium from "../medium.svg";
+import linkedin from "../assets/linkedin.svg";
+import twitter from "../assets/twitter.svg";
+import insta from "../assets/insta.svg";
+import telegram from "../assets/telegram.svg";
+import medium from "../assets/medium.svg";
 import logo from '../assets/logo.png'
 
 const Footer = () => {
@@ -12,10 +12,10 @@ const Footer = () => {
     <>
       <Container sx={{mb: 2}} id={'contact'}>
         <Grid container style={{ display: "flex", justifyContent: "center"}}>
-          <Grid sx={{display: "flex", alignItems: 'center', justifyContent: 'center' , borderRight: '1px solid #6F14E3'}} item xs={12} md={4}>
+          <Grid sx={{display: "flex", alignItems: 'center', justifyContent: 'center' , borderRight: {md: '1px solid #6F14E3', xs: 'none'}}} item xs={12} md={4}>
             <img style={{width: '250px'}} src={logo}/>
           </Grid>
-          <Grid sx={{display: "flex", flexDirection: 'column' ,alignItems: 'center', borderRight: '1px solid #6F14E3', pt: 3, pb: 3 }} item xs={12} md={4}>
+          <Grid sx={{display: "flex", flexDirection: 'column' ,alignItems: 'center', borderRight: {md: '1px solid #6F14E3', xs: 'none'}, pt: 3, pb: 3 }} item xs={12} md={4}>
             <div
               style={{
                 display: "flex",
